@@ -770,11 +770,13 @@ KeySym conf_get_key(void)
 
 int conf_get_width(void)
 {
+    conf_find_position();
     return _width;
 }
 
 int conf_get_height(void)
 {
+    conf_find_position();
     return _height;
 }
 
